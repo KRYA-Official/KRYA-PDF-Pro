@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="hi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>KRYA PDF Pro | दुनिया का सबसे तेज PDF Tool</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.10.1/html2pdf.bundle.min.js"></script>
+</head>
+<body>
+    <div class="glass-container">
+        <header>
+            <h1>KRYA PDF Pro</h1>
+            <p>दुनिया का सबसे तेज PDF Tool</p>
+        </header>
+
+        <main id="app">
+            <textarea id="editor" placeholder="अपना टेक्स्ट यहाँ लिखें..."></textarea>
+            <div class="controls">
+                <button onclick="generatePDF()" class="btn-primary">PDF डाउनलोड करें</button>
+                <button onclick="toggleDarkMode()" class="btn-secondary">Dark Mode</button>
+            </div>
+            <div id="progress-bar"></div>
+        </main>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
