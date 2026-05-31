@@ -16,8 +16,15 @@
 
         <main id="app">
             <textarea id="editor" placeholder="अपना टेक्स्ट यहाँ लिखें..."></textarea>
+            
+            <!-- नया फाइल अपलोड सेक्शन -->
+            <div class="upload-section" style="margin: 20px 0;">
+                <input type="file" id="imageInput" accept="image/*">
+            </div>
+
             <div class="controls">
-                <button onclick="generatePDF()" class="btn-primary">PDF डाउनलोड करें</button>
+                <button onclick="generatePDF()" class="btn-primary">टेक्स्ट से PDF</button>
+                <button onclick="handleImageToPDF()" class="btn-secondary">फोटो से PDF</button>
                 <button onclick="toggleDarkMode()" class="btn-secondary">Dark Mode</button>
             </div>
             <div id="progress-bar"></div>
